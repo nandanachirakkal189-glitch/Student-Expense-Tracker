@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #333;
+}
+
+header {
+    background: #d95f8c;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #e9b9ca;
+}
+
+h2 {
+    color: #c64d7c;
+    margin-bottom: 20px;
+}
+
+.budget-input {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.budget-input input {
+    flex: 1;
+    min-width: 180px;
+}
+
+button {
+    background: #d95f8c;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #b83f70;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #e9b9ca;
+}
+
+.card h3 {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 23px;
+    font-weight: bold;
+    color: #d95f8c;
+    overflow-wrap: anywhere;
+}
+
+#expenseForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+#expenseForm button {
+    grid-column: span 2;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #e99ab7;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 550px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #fce3ed;
+    color: #a63d66;
+}
+
+.delete-btn {
+    background: #e65d5d;
+    padding: 8px 12px;
+}
+
+.delete-btn:hover {
+    background: #c93636;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #999;
+    padding: 15px;
+}
+
+.summary-item {
+    margin-bottom: 16px;
+}
+
+.summary-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    gap: 10px;
+}
+
+.progress {
+    background: #f5dce6;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #d95f8c;
+    height: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+@media (max-width: 700px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    #expenseForm {
+        grid-template-columns: 1fr;
+    }
+
+    #expenseForm button {
+        grid-column: span 1;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
